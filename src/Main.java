@@ -4,7 +4,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         //Creates the frame to hold panel and text
-        JFrame frame = new JFrame("STAY ON TASK");
+        /*JFrame frame = new JFrame("STAY ON TASK");
 
 
         //JPanel to hold text and icons and buttons
@@ -45,11 +45,13 @@ public class Main {
         p.add(field1, c);
 
         //adds panel to the frame and sets frame size
+        TextField field = new TextField();
         frame.add(p);
         frame.setSize(1000,500);
-
+*/
         //makes frame visible
-        frame.setVisible(true);
+        //frame.setVisible(true);
+        TextField field = new TextField();
     }
 
     public static void startTimer(){
