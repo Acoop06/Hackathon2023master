@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,52 +13,13 @@ public class Main {
         //JPanel to hold text and icons and buttons
         JPanel  p = new JPanel();
 
-        JButton button;
+        //NAME OF GRID CONSTRAINTS IS C
         p.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
-        if (shouldFill) {
-            //natural height, maximum width
-            c.fill = GridBagConstraints.HORIZONTAL;
-        }
-
-        //Creates Button 1, filling the horizontal in cooperation with buttons 2 and 3
-        button = new JButton("Button 1");
-        if (shouldWeightX) {
-            //Requests more space when window is resized
-            c.weightx = 0.5;
-        }
+        //constrains button horizontal size
         c.fill = GridBagConstraints.HORIZONTAL;
-        //Places Button 1 at the leftmost position of the grid
-        c.gridx = 0;
-        //Places button 1 at the topmost position of the grid
-        c.gridy = 0;
-        p.add(button, c);
 
-        button = new JButton("Button 2");
-        c.fill = GridBagConstraints.HORIZONTAL;
-        c.weightx = 0.5;
-        //Places Button 2 in the position to the right of Button 1 (gridx and gridy are 0-based)
-        c.gridx = 1;
-        c.gridy = 0;
-        p.add(button, c);
-
-        button = new JButton("Button 3");
-        c.fill = GridBagConstraints.HORIZONTAL;
-        c.weightx = 0.5;
-        c.gridx = 2;
-        c.gridy = 0;
-        p.add(button, c);
-
-        button = new JButton("Long-Named Button 4");
-        c.fill = GridBagConstraints.HORIZONTAL;
-        c.ipady = 40;      //make this component tall
-        c.weightx = 0.0;
-        c.gridwidth = 3;
-        c.gridx = 0;
-        c.gridy = 1;
-        p.add(button, c);
-
-        button = new JButton("5");
+        JButton startButton = new JButton("Start");
         c.fill = GridBagConstraints.HORIZONTAL;
         c.ipady = 0;       //reset to default height
         c.weighty = 1.0;   //request any extra vertical space
@@ -64,14 +27,24 @@ public class Main {
         c.insets = new Insets(10,0,0,0);  //top padding
         c.gridx = 1;       //aligned with button 2
         c.gridwidth = 2;   //2 columns wide
-        c.gridy = 2;       //third row
-        p.add(button, c);
+        c.gridy = 3;       //third row
+        p.add(startButton, c);
 
         //creates label and adds it to the panel
-        JLabel label1 = new JLabel("TEXT I ADDED TEXT TO THE SCREEN WOOOOOOOOOOOOO");
+        JLabel label1 = new JLabel("TEXT I ADDED TEXT TO THE SCREEN");
+        //keeps field from centering and offputting the button
+        c.weighty = 0;
+        c.weightx = 0.5;
         c.gridx = 0;
-        c.gridy = 2;
+        c.gridy = 0;
         p.add(label1, c);
+
+        JTextField field1 = new JTextField();
+        field1.setText("TESTING");
+        c.weighty = 0;
+        c.gridx = 2;
+        c.gridy = 0;
+        p.add(field1, c);
 
         //adds panel to the frame and sets frame size
         frame.add(p);
