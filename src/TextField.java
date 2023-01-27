@@ -45,6 +45,10 @@ public class TextField extends JFrame {
                 hours = (Integer.parseInt(inputHr)*3600);
 
                 jl.setText("Timer Set!");
+
+                String totalTime = hours + minutes + seconds + "";
+
+                Stopwatch timer = new Stopwatch(totalTime);
             }
         });
 

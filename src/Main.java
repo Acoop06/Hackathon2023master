@@ -53,8 +53,4 @@ public class Main {
         //frame.setVisible(true);
         TextField field = new TextField();
     }
-
-    public static void startTimer(){
-        //Timer stuff here
-    }
 }

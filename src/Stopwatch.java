@@ -6,10 +6,11 @@ import java.util.Timer;
 public class Stopwatch {
     static int interval;
     static Timer timer;
+    static String secs;
 
     //Terribly uncommented; I'm sorry.
-    public static void main(String[] args) {
-        String secs = "10";
+    public Stopwatch(String s) {
+        secs = s;
         int delay = 1000;
         int period = 1000;
         timer = new Timer();
@@ -33,7 +34,6 @@ public class Stopwatch {
                 timerPanel.add(time, c);
                 timerFrame.setVisible(true);
                 timerFrame.add(timerPanel);
-                //System.out.println(setInterval());
             }
         }, delay, period);
     }
