@@ -11,7 +11,7 @@ public class Main {
         JPanel  p = new JPanel();
         //creates check box
         new Checkbox();
-
+        new BoxClicked();
         //NAME OF GRID CONSTRAINTS IS C
         p.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
