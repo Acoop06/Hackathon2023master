@@ -1,11 +1,14 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TextField extends JFrame {
-
+//creates a panel
     JPanel jp = new JPanel();
+    //creates a label
     JLabel jl = new JLabel();
+    //creates labels for timestamps
     JLabel hourLabel = new JLabel("Hours:");
     JLabel minuteLabel = new JLabel("Minutes:");
     JLabel secondsLabel = new JLabel("Seconds:");
@@ -31,6 +34,13 @@ public class TextField extends JFrame {
         jp.add(jtsec);
 
         jp.add(jb);
+
+        JCheckBox checkBox = new JCheckBox();
+        checkBox.setText("Toggle Flashing");
+        checkBox.setFocusable(false);
+
+        jp.add(checkBox);
+
         jb.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)

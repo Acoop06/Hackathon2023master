@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="ADDED TEXT TO THE SCHREEEN WHOOOOOOOO">
+    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="deleted stuffs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stopwatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextField.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
