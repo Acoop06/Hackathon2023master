@@ -6,9 +6,12 @@ public class TextField extends JFrame {
 
     JPanel jp = new JPanel();
     JLabel jl = new JLabel();
-    JTextField jt = new JTextField(30);
-    JTextField jtmin = new JTextField(30);
-    JTextField jtsec = new JTextField(30);
+    JLabel hourLabel = new JLabel("Hours:");
+    JLabel minuteLabel = new JLabel("Minutes:");
+    JLabel secondsLabel = new JLabel("Seconds:");
+    JTextField jt = new JTextField("0",10);
+    JTextField jtmin = new JTextField("0",10);
+    JTextField jtsec = new JTextField("0",10);
     JButton jb = new JButton("Enter");
     int seconds = 0;
     int minutes = 0;
@@ -17,10 +20,14 @@ public class TextField extends JFrame {
     public TextField(){
         setTitle("Test");
         setVisible(true);
-        setSize(350,400);
+        setSize(550,400);
+        setResizable(false);
 
+        jp.add(hourLabel);
         jp.add(jt);
+        jp.add(minuteLabel);
         jp.add(jtmin);
+        jp.add(secondsLabel);
         jp.add(jtsec);
 
         jp.add(jb);
@@ -38,7 +45,7 @@ public class TextField extends JFrame {
                 hours = (Integer.parseInt(inputHr)*3600);
 
                 String input = hours + minutes + seconds + "";
-                jl.setText(input);
+                jl.setText("Timer Set!");
             }
         });
 
