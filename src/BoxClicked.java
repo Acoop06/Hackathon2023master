@@ -24,6 +24,6 @@ public class BoxClicked implements ActionListener{
         public void actionPerformed(ActionEvent e) {
             //this is where the buttons are executed
             count++;
-            System.out.print("There are this many " + count);
+            System.out.print("There are this many " + count + " counts ");
         }
 }
