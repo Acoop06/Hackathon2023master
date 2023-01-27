@@ -44,7 +44,6 @@ public class TextField extends JFrame {
                 String inputHr = jt.getText();
                 hours = (Integer.parseInt(inputHr)*3600);
 
-                String input = hours + minutes + seconds + "";
                 jl.setText("Timer Set!");
             }
         });
