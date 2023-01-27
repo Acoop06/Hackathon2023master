@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="checkbox class empty" />
+    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="teehee">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoxClicked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoxClicked.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
