@@ -8,6 +8,9 @@ public class TextField extends JFrame {
     JLabel jl = new JLabel();
     JTextField jt = new JTextField(30);
     JButton jb = new JButton("Enter");
+    int seconds = 0;
+    int minutes = 0;
+    int hours = 0;
 
     public TextField(){
         setTitle("Test");
@@ -20,7 +23,10 @@ public class TextField extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String input = jt.getText();
-                jl.setText(input);
+                if (input != null && input.matches("[0-9.]+")) {
+                    hours = Integer.parseInt(input);
+                    System.out.println("It worked :)))");
+                }
             }
         });
 

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="checkbox class empty">
-      <change afterPath="$PROJECT_DIR$/src/TextField.java" afterDir="false" />
+    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="whar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextField.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674782871903</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="whar">
+      <created>1674785587827</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674785587827</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +85,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="teehee" />
     <MESSAGE value="checkbox class empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkbox class empty" />
+    <MESSAGE value="whar" />
+    <option name="LAST_COMMIT_MESSAGE" value="whar" />
   </component>
 </project>
