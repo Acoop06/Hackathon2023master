@@ -23,27 +23,6 @@ public class TextField extends JFrame {
         jp.add(jtmin);
         jp.add(jtsec);
 
-        jt.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                System.out.println("It worked :)))");
-            }
-        });
-
-        jtmin.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                System.out.println("It worked :)))");
-            }
-        });
-
-        jtsec.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                System.out.println("It worked :)))");
-            }
-        });
-
         jp.add(jb);
         jb.addActionListener(new ActionListener()
         {
