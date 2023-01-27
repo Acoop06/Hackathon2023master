@@ -5,8 +5,6 @@ import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
-        final boolean shouldFill = true;
-        final boolean shouldWeightX = true;
         //Creates the frame to hold panel and text
         JFrame frame = new JFrame("STAY ON TASK");
 
