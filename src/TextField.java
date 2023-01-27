@@ -27,32 +27,26 @@ public class TextField extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String input = jt.getText();
-                if (input != null && input.matches("[0-9.]+")) {
-                    hours = (Integer.parseInt(input))*3600;
-                    System.out.println("It worked :)))");
-                }
+                hours = (Integer.parseInt(input))*3600;
+                System.out.println("It worked :)))");
             }
         });
 
         jtmin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String input = jt.getText();
-                if (input != null && input.matches("[0-9.]+")) {
-                    minutes = (Integer.parseInt(input))*60;
-                    System.out.println("It worked :)))");
-                }
+                String input = jtmin.getText();
+                minutes = (Integer.parseInt(input))*60;
+                System.out.println("It worked :)))");
             }
         });
 
         jtsec.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String input = jt.getText();
-                if (input != null && input.matches("[0-9.]+")) {
-                    seconds = (Integer.parseInt(input));
-                    System.out.println("It worked :)))");
-                }
+                String input = jtsec.getText();
+                seconds = (Integer.parseInt(input));
+                System.out.println("It worked :)))");
             }
         });
 
@@ -61,8 +55,8 @@ public class TextField extends JFrame {
         {
             public void actionPerformed(ActionEvent e)
             {
-                String input = jt.getText();
-                jl.setText(String.valueOf(hours + minutes + seconds));
+                String input = hours + minutes + seconds + "";
+                jl.setText(input);
             }
         });
 
