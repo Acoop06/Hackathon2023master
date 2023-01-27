@@ -1,8 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
+        final boolean shouldFill = true;
+        final boolean shouldWeightX = true;
         //Creates the frame to hold panel and text
         JFrame frame = new JFrame("STAY ON TASK");
 
@@ -16,6 +20,7 @@ public class Main {
         c.fill = GridBagConstraints.HORIZONTAL;
 
         JButton startButton = new JButton("Start");
+        c.fill = GridBagConstraints.HORIZONTAL;
         c.ipady = 0;       //reset to default height
         c.weighty = 1.0;   //request any extra vertical space
         c.anchor = GridBagConstraints.PAGE_END; //place at bottom of window
@@ -35,7 +40,7 @@ public class Main {
         p.add(label1, c);
 
         JTextField field1 = new JTextField();
-        field1.setText("TESTING");
+        field1.setText("");
         c.weighty = 0;
         c.gridx = 2;
         c.gridy = 0;
@@ -47,9 +52,8 @@ public class Main {
 
         //makes frame visible
         frame.setVisible(true);
-    }
 
-    public static void startTimer(){
-        //Timer stuff here
+        //WHAT I DID
+        TextField t = new TextField();
     }
 }
