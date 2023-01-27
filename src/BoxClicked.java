@@ -10,12 +10,10 @@ public class BoxClicked implements ActionListener{
         BoxClicked(){
             JFrame frame = new JFrame();
             JButton button1 = new JButton("Button1");
-            JButton button2 = new JButton("Button2");
             button1.addActionListener(this);
 
             frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
             frame.add(button1);
-            frame.add(button2);
             frame.getRootPane().setDefaultButton(button1); // sets default button
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(450,450);
@@ -24,7 +22,8 @@ public class BoxClicked implements ActionListener{
         }
 
         public void actionPerformed(ActionEvent e) {
+            //this is where the buttons are executed
             count++;
-            System.out.println("You have clicked the ACTIVE button " + count + " times");
+            System.out.print("There are this many " + count);
         }
 }
