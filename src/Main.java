@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +16,6 @@ public class Main {
         c.fill = GridBagConstraints.HORIZONTAL;
 
         JButton startButton = new JButton("Start");
-        c.fill = GridBagConstraints.HORIZONTAL;
         c.ipady = 0;       //reset to default height
         c.weighty = 1.0;   //request any extra vertical space
         c.anchor = GridBagConstraints.PAGE_END; //place at bottom of window
@@ -50,5 +47,9 @@ public class Main {
 
         //makes frame visible
         frame.setVisible(true);
+    }
+
+    public static void startTimer(){
+        //Timer stuff here
     }
 }
