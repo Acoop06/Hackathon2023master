@@ -10,8 +10,11 @@ public class Main {
         //Creates the frame to hold panel and text
         JFrame frame = new JFrame("STAY ON TASK");
 
+
         //JPanel to hold text and icons and buttons
         JPanel  p = new JPanel();
+        //creates check box
+        new Checkbox();
 
         //NAME OF GRID CONSTRAINTS IS C
         p.setLayout(new GridBagLayout());
