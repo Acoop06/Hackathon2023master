@@ -8,12 +8,12 @@ public class Stopwatch {
     static Timer timer;
     static String secs;
 
-    //Terribly uncommented; I'm sorry.
     public Stopwatch(String s) {
+        //Takes a string and converts to seconds
         secs = s;
         int delay = 1000;
         int period = 1000;
-        timer = new Timer();
+        timer = new Timer(); //Creates the timer object
         interval = Integer.parseInt(secs); //length of timer
         System.out.println(secs);
         JFrame timerFrame = new JFrame("TIMER");
@@ -22,12 +22,14 @@ public class Stopwatch {
         GridBagConstraints c = new GridBagConstraints();
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
+                //Formatting window stuff
                 timerFrame.setSize(1000,500);
                 timerPanel.removeAll();
                 JLabel header = new JLabel("Time Remaining:");
                 c.gridx = 0;
                 c.gridy = 0;
                 timerPanel.add(header, c);
+                //Updates timer text
                 JLabel time = new JLabel(Integer.toString(setInterval()));
                 c.gridx = 0;
                 c.gridy = 1;
@@ -39,6 +41,7 @@ public class Stopwatch {
     }
 
     private static int setInterval() {
+        //Increments the timer
         if (interval == 1) {
             timer.cancel();
         }
