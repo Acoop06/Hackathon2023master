@@ -7,6 +7,7 @@ public class Stopwatch {
     static int interval;
     static Timer timer;
 
+    //Terribly uncommented; I'm sorry.
     public static void main(String[] args) {
         String secs = "10";
         int delay = 1000;
@@ -20,23 +21,27 @@ public class Stopwatch {
         GridBagConstraints c = new GridBagConstraints();
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
+                timerFrame.setSize(1000,500);
+                timerPanel.removeAll();
                 JLabel header = new JLabel("Time Remaining:");
                 c.gridx = 0;
                 c.gridy = 0;
                 timerPanel.add(header, c);
-                JLabel time = new JLabel(Integer.toString(interval));
+                JLabel time = new JLabel(Integer.toString(setInterval()));
                 c.gridx = 0;
                 c.gridy = 1;
                 timerPanel.add(time, c);
                 timerFrame.setVisible(true);
                 timerFrame.add(timerPanel);
+                //System.out.println(setInterval());
             }
         }, delay, period);
     }
 
     private static int setInterval() {
-        if (interval == 1)
+        if (interval == 1) {
             timer.cancel();
+        }
         return --interval;
     }
 }
