@@ -24,28 +24,22 @@ public class TextField extends JFrame {
         jp.add(jtsec);
 
         jt.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
-                String input = jt.getText();
-                hours = (Integer.parseInt(input))*3600;
+
                 System.out.println("It worked :)))");
             }
         });
 
         jtmin.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
-                String input = jtmin.getText();
-                minutes = (Integer.parseInt(input))*60;
+
                 System.out.println("It worked :)))");
             }
         });
 
         jtsec.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
-                String input = jtsec.getText();
-                seconds = (Integer.parseInt(input));
+
                 System.out.println("It worked :)))");
             }
         });
@@ -55,6 +49,15 @@ public class TextField extends JFrame {
         {
             public void actionPerformed(ActionEvent e)
             {
+                String inputSec = jtsec.getText();
+                seconds = (Integer.parseInt(inputSec));
+
+                String inputMin = jtmin.getText();
+                minutes = (Integer.parseInt(inputMin))*60;
+
+                String inputHr = jt.getText();
+                hours = (Integer.parseInt(inputHr)*3600);
+
                 String input = hours + minutes + seconds + "";
                 jl.setText(input);
             }
