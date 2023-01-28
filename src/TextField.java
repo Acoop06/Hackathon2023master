@@ -65,10 +65,11 @@ public class TextField extends JFrame {
                 timer.scheduleAtFixedRate(new TimerTask() {
                     public void run() {
                         System.out.println(interval);
+                        jl.setText("Timer Set! Time Remaining:  " + setInterval() + " seconds");
                     }
                 }, 1000, 1000);
 
-                jl.setText("Timer Set! Time Remaining:" + setInterval());
+
             }
         });
 
@@ -78,7 +79,7 @@ public class TextField extends JFrame {
     }
     public static int setInterval() {
         //Increments the timer
-        if (interval == 0) {
+        if (interval <= 1) {
             timer.cancel();
         }
         return --interval;

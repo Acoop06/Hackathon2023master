@@ -7,6 +7,9 @@ public class Stopwatch {
     static int interval;
     static Timer timer;
     static String secs;
+    static int blinkCount = 0;
+    static JFrame timerFrame = new JFrame("TIMER");
+    static JPanel timerPanel = new JPanel();
 
     public Stopwatch(String s) {
         //Takes a string and converts to seconds
@@ -16,8 +19,6 @@ public class Stopwatch {
         timer = new Timer(); //Creates the timer object
         interval = Integer.parseInt(secs); //length of timer
         System.out.println(secs);
-        JFrame timerFrame = new JFrame("TIMER");
-        JPanel timerPanel = new JPanel();
         timerPanel.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
         timer.scheduleAtFixedRate(new TimerTask() {
@@ -45,7 +46,16 @@ public class Stopwatch {
         //Increments the timer
         if (interval == 1) {
             timer.cancel();
+            blink();
         }
         return --interval;
     }
+
+    private static void blink(){
+        if(blinkCount % 2 == 0)
+            timerPanel.setBackground(Color.BLACK);
+        else
+            timerPanel.setBackground(Color.WHITE);
+    }
+
 }
