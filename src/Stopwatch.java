@@ -23,24 +23,25 @@ public class Stopwatch {
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
                 //Formatting window stuff
-                timerFrame.setSize(1000,500);
+                /*timerFrame.setSize(1000,500);
                 timerPanel.removeAll();
                 JLabel header = new JLabel("Time Remaining:");
                 c.gridx = 0;
                 c.gridy = 0;
                 timerPanel.add(header, c);
                 //Updates timer text
-                JLabel time = new JLabel(Integer.toString(setInterval()));
+                */
+                /*
                 c.gridx = 0;
                 c.gridy = 1;
                 timerPanel.add(time, c);
                 timerFrame.setVisible(true);
-                timerFrame.add(timerPanel);
+                timerFrame.add(timerPanel);*/
             }
         }, delay, period);
     }
 
-    private static int setInterval() {
+    public static int setInterval() {
         //Increments the timer
         if (interval == 1) {
             timer.cancel();
