@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class TextField extends JFrame {
 //creates a panel
@@ -16,9 +18,12 @@ public class TextField extends JFrame {
     JTextField jtmin = new JTextField("0",10);
     JTextField jtsec = new JTextField("0",10);
     JButton jb = new JButton("Enter");
+
+    static Timer timer = new Timer();
     int seconds = 0;
     int minutes = 0;
     int hours = 0;
+    static int interval = 0;
 
     public TextField(){
         setTitle("Test");
@@ -54,17 +59,30 @@ public class TextField extends JFrame {
                 String inputHr = jt.getText();
                 hours = (Integer.parseInt(inputHr)*3600);
 
-                jl.setText("Timer Set!");
-
                 String totalTime = hours + minutes + seconds + "";
 
-                Stopwatch timer = new Stopwatch(totalTime);
+                interval = Integer.parseInt(totalTime);
+                timer.scheduleAtFixedRate(new TimerTask() {
+                    public void run() {
+                        System.out.println(interval);
+                        jl.setText("Timer Set! Time Remaining:  " + setInterval() + " seconds");
+                    }
+                }, 1000, 1000);
+
+
             }
         });
 
         //ands jlabel to jpanel
         jp.add(jl);
         add(jp);
+    }
+    public static int setInterval() {
+        //Increments the timer
+        if (interval <= 1) {
+            timer.cancel();
+        }
+        return --interval;
     }
 
 }
