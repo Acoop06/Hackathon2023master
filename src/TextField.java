@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Timer;
@@ -18,12 +17,15 @@ public class TextField extends JFrame {
     JTextField jtmin = new JTextField("0",10);
     JTextField jtsec = new JTextField("0",10);
     JButton jb = new JButton("Enter");
+    JLabel message = new JLabel("What do you need to remind yourself to do?");
+    static JTextField textInput = new JTextField("DO YOUR WORK",10);
 
     static Timer timer = new Timer();
     int seconds = 0;
     int minutes = 0;
     int hours = 0;
     static int interval = 0;
+    static JCheckBox checkBox = new JCheckBox();
 
     public TextField(){
         setTitle("Test");
@@ -39,8 +41,8 @@ public class TextField extends JFrame {
         jp.add(jtsec);
 
         jp.add(jb);
-
-        JCheckBox checkBox = new JCheckBox();
+        jp.add(message);
+        jp.add(textInput);
         checkBox.setText("Toggle Flashing");
         checkBox.setFocusable(false);
 
@@ -80,6 +82,7 @@ public class TextField extends JFrame {
     public static int setInterval() {
         //Increments the timer
         if (interval <= 1) {
+            PopUps pa = new PopUps();
             timer.cancel();
         }
         return --interval;
