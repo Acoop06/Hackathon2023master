@@ -28,7 +28,7 @@ public class TextField extends JFrame {
     static JCheckBox checkBox = new JCheckBox();
 
     public TextField(){
-        setTitle("Test");
+        setTitle("Remindinator");
         setVisible(true);
         setSize(550,400);
         setResizable(false);
