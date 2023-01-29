@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="HoPeFuLlY WoRkS">
+    <list default="true" id="d2d10d1d-c816-45cd-bd7d-b67bd53648d4" name="Changes" comment="final build?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PopUps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopUps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674843013471</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final build?">
+      <created>1674956516490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674956516490</updated>
+    </task>
+    <task id="LOCAL-00005" summary="final build?">
+      <created>1674956611148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674956611148</updated>
+    </task>
+    <task id="LOCAL-00006" summary="final build?">
+      <created>1674957357886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674957357886</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,6 +100,8 @@
     <MESSAGE value="teehee" />
     <MESSAGE value="Implemented Stopwatch class in TextField class." />
     <MESSAGE value="Added comments to Stopwatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments to Stopwatch" />
+    <MESSAGE value="final build" />
+    <MESSAGE value="final build?" />
+    <option name="LAST_COMMIT_MESSAGE" value="final build?" />
   </component>
 </project>
